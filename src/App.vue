@@ -1,19 +1,19 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+ <IonApp>
+   <IonRouterView />
+ </IonApp>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script lang="ts">
+import { IonApp, IonRouterView } from '@modus/ionic-vue';
+import { defineComponent } from 'vue'
+export default defineComponent ({
+ name: "App",
+ components: {
+   IonApp,
+   IonRouterView,
+ },
+});
 </script>
 
 <style>
